@@ -7,25 +7,7 @@ It is structured as follows:
     │   .gitignore
     │   Cargo.lock: Defines libraries, dependencies and binaries
     |
-    ├───azureVMLogs: Raw data from the Azure tests
-    │       VM3.jsonl
-    |       ...
-    │       VM8.jsonl
-    │       vmLogAnalysis.py: Python script to interpret and analyze the logs
-    |
     ├───src
-    |   |
-    │   ├───bin
-    │   │   ├───azureTestingScripts: Scripts used in Azure tests
-    │   │   │       fixture_server.rs
-    │   │   │       snark_setup.rs
-    │   │   │       test_harness.rs
-    │   │   ├───examples: Examples on how to use the zk-DEAP libraries
-    │   │   │       bullet_example.rs
-    │   │   │       snark_examples.rs
-    │   │   │       stark_examples.rs
-    │   │   └───utils: Helper script to obtain the zk-SNARK public parameters
-    │   │           param_gen.rs
     |   |
     │   │   lib.rs
     │   ├───common: Common methods shared across all three
@@ -34,8 +16,26 @@ It is structured as follows:
     │   │       mod.rs
     │   ├───snark: SNARK specific methods
     │   │       mod.rs
-    │   └───stark: STARK specific methods
-    │           mod.rs
+    │   ├───stark: STARK specific methods
+    │   │        mod.rs
+    |   |
+    │   └───bin
+    │       ├───azureTestingScripts: Scripts used in Azure tests
+    │       │       fixture_server.rs
+    │       │       snark_setup.rs
+    │       │       test_harness.rs
+    │       ├───examples: Examples on how to use the zk-DEAP libraries
+    │       │       bullet_example.rs
+    │       │       snark_examples.rs
+    │       │       stark_examples.rs
+    │       └───utils: Helper script to obtain the zk-SNARK public parameters
+    |               param_gen.rs
+    |
+    ├───azureVMLogs: Raw data from the Azure tests
+    │       VM3.jsonl
+    |       ...
+    │       VM8.jsonl
+    │       vmLogAnalysis.py: Python script to interpret and analyze the logs
     |
     └───trusted_setup: Example KZG BN254_8 to use
             kzg_bn254_8.params
