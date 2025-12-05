@@ -1,4 +1,6 @@
-This repository is associated with zk-DEAP paper. It is structured as follows: 
+This repository is associated with zk-DEAP paper.
+
+It is structured as follows: 
 
     zk-DEAP
     |
