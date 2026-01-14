@@ -1,3 +1,5 @@
+//This was made with AI Assistance
+
 use serde::{Deserialize, Serialize}; //Serialize/deserialize
 use std::collections::{HashMap, BTreeMap}; //Data structures
 use std::time::Instant; //Timing
